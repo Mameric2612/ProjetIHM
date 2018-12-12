@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+   <children>
+      <Button layoutX="91.0" layoutY="507.0" mnemonicParsing="false" onAction="#LienMagazine" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: rgb(199, 254, 185);" text="Accéder aux magazines" underline="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="419.0" layoutY="507.0" mnemonicParsing="false" onAction="#LienAtelier" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: rgb(199, 254, 185);" text="Accéder aux ateliers" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="745.0" layoutY="507.0" mnemonicParsing="false" onAction="#LienOutils" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: rgb(199, 254, 185);" text="Accéder aux outils" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Separator layoutX="324.0" layoutY="163.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="27.0" />
+      <Separator layoutX="650.0" layoutY="163.0" orientation="VERTICAL" prefHeight="362.0" prefWidth="27.0" />
+      <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
+         <children>
+            <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+            <Label contentDisplay="CENTER" layoutX="439.0" layoutY="22.0" prefHeight="53.0" prefWidth="122.0" text="Accueil">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Text layoutX="55.0" layoutY="221.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plusieurs categories de magazines vous sont proposées dans cette partie. Vous pourrez ainsi ameliorer votre comprehension de la langue tout en vous informant" textAlignment="CENTER" wrappingWidth="239.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="382.0" layoutY="221.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ici vous trouverez des exercices de tous types pour pouvoir apprendre progressivement et a votre rythme. Chaque exercice est aussi precedé de sa leçon " textAlignment="CENTER" wrappingWidth="239.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="709.0" layoutY="221.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous trouverez dans cette rubrique un lexique ainsi que toutes les leçons existantes, triées par categories. Si quelque chose vous échape, n'hesitez pas !" textAlignment="CENTER" wrappingWidth="239.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
