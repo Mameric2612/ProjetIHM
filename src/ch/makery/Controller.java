@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Controller {
@@ -49,5 +50,18 @@ public class Controller {
 	
 		window.setScene(tableViewScene);
 		window.show();
+	}
+	
+	public void LienLexique(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Lexique.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+		
+		Stage stage = new Stage();
+		stage.setScene(tableViewScene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        
+        stage.show();
+
+
 	}
 }
