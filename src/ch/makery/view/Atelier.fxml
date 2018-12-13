@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.web.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.text.*?>
@@ -22,5 +23,6 @@
          </children>
       </Pane>
       <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <WebView fx:id="WebViewer" layoutX="227.0" layoutY="223.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
