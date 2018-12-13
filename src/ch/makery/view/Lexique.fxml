@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -13,21 +18,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.TextFlow?>
 
-<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
-            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Lexique" textAlignment="CENTER">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-            </Button>
-            <TextFlow layoutX="382.0" layoutY="21.0" prefHeight="55.0" prefWidth="236.0" />
             <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
-            <Button layoutX="185.0" layoutY="31.0" mnemonicParsing="false" onAction="#FermerLexique" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Fermer" textAlignment="CENTER">
+            <Button layoutX="41.0" layoutY="29.0" mnemonicParsing="false" onAction="#FermerLexique" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Fermer" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
@@ -35,17 +31,22 @@
                   <Insets />
                </opaqueInsets>
             </Button>
+            <Label layoutX="439.0" layoutY="22.0" text="Lexique">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
-      <AnchorPane layoutY="97.0" prefHeight="531.0" prefWidth="1000.0">
+      <AnchorPane layoutY="97.0" prefHeight="531.0" prefWidth="1000.0" style="-fx-background-color: white;">
          <children>
             <ScrollPane hbarPolicy="NEVER" layoutX="167.0" layoutY="99.0" prefHeight="334.0" prefWidth="639.0" vbarPolicy="ALWAYS">
                <content>
-                  <GridPane cache="true" cacheHint="SCALE" gridLinesVisible="true" prefHeight="500.0" prefWidth="639.0">
+                  <GridPane alignment="CENTER" cache="true" cacheHint="SCALE" gridLinesVisible="true" prefHeight="500.0" prefWidth="639.0">
                      <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="131.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="295.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="91.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.0" minWidth="10.0" prefWidth="376.0" />
                      </columnConstraints>
                      <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -61,45 +62,45 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label text="Label" GridPane.rowIndex="4" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="appointment" GridPane.rowIndex="4" />
+                        <Label text="rendez-vous" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <Label text="Release" />
                         <Label text="Libérer" GridPane.columnIndex="1" />
-                        <Label text="Label" GridPane.columnIndex="2" />
-                        <Label text="Label" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.rowIndex="2" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                        <Label text="Label" GridPane.rowIndex="3" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                        <Label text="Label" GridPane.rowIndex="5" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                        <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Label text="Label" GridPane.rowIndex="6" />
+                        <Label text="ashtray" GridPane.rowIndex="1" />
+                        <Label text="cigarette" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="movie" GridPane.rowIndex="2" />
+                        <Label text="film" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="hoot" GridPane.rowIndex="3" />
+                        <Label text="hululement" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="emblem" GridPane.rowIndex="5" />
+                        <Label text="emblème" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="chose" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label text="thing" GridPane.rowIndex="6" />
                         <Label text="Label" GridPane.rowIndex="7" />
                         <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
                         <Label text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The jail released the prisoner after four years.   Le prisonnier a été libéré au bout de quatre ans." wrappingWidth="253.70703125" GridPane.columnIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The waiter placed an ashtray on the smoker's table.  Le serveur a posé un cendrier sur la table du fumeur." wrappingWidth="282.70703125" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Text layoutX="354.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I am watching a movie on television.                         Je suis en train de regarder un film à la télévision." wrappingWidth="282.70703125" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Text layoutX="354.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I heard the hoot of an owl.                                         J'ai entendu le hululement d'une chouette." wrappingWidth="282.70703125" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Text layoutX="273.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I have an appointment at the doctor's office at 10:00. J'ai un rendez-vous chez le médecin à 10 h." wrappingWidth="282.70703125" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Text layoutX="273.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The ship's flags bore the emblem of piracy.                                    Les drapeaux du navire portent l'emblème de la piraterie." wrappingWidth="354.70703125" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Text layoutX="273.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I'm not sure what this thing is.                                                          Je ne suis pas sûr de ce qu'est cette chose." wrappingWidth="354.70703125" GridPane.columnIndex="2" GridPane.rowIndex="6" />
                      </children>
                   </GridPane>
                </content>
             </ScrollPane>
-            <Label layoutX="203.0" layoutY="53.0" text="Anglais">
+            <Label layoutX="200.0" layoutY="61.0" text="Anglais">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="378.0" layoutY="55.0" text="Français">
+            <Label layoutX="328.0" layoutY="55.0" text="Français">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="562.0" layoutY="55.0" text="Exemple d'utilisation">
+            <Label layoutX="537.0" layoutY="55.0" text="Exemple d'utilisation">
                <font>
                   <Font size="18.0" />
                </font>
