@@ -8,7 +8,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
@@ -62,20 +61,13 @@ public class Controller {
 	
 
 	public void ArticleSport2(ActionEvent event) throws IOException{
-		//LienArticle("https://edition.cnn.com/2018/12/12/sport/hines-ward-nfl-reflections-after-week-14-spt-intl/index.html", event);
+		LienArticle("https://edition.cnn.com/2018/12/12/sport/hines-ward-nfl-reflections-after-week-14-spt-intl/index.html", event);
 	}
 	
-	@FXML
-	public void LienArticle(ActionEvent event) throws IOException{
-		WebView myWebView = new WebView();
-		WebEngine engine = myWebView.getEngine();
-		engine.load("https://www.google.com");
-		WebViewer = myWebView;
+	
+	public void LienArticle(String lien, ActionEvent event) throws IOException{
+		
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Article.fxml"));
-		Pane root = new Pane();
-
-		engine.load("https://www.google.com");
-		root.getChildren().addAll(myWebView);
 		
 		Scene tableViewScene =new  Scene(tableViewParent);
 			
@@ -83,10 +75,15 @@ public class Controller {
 		window.setScene(tableViewScene);
 		window.show();
 		
+		GererWebView(lien);
 	}
 	
+	@FXML
 	public void GererWebView(String lien) {
-		
+		WebView myWebView = new WebView();
+		WebViewer = myWebView;
+		WebEngine engine = WebViewer.getEngine();
+		engine.load("https://www.google.com");
 	}
 		
 		
