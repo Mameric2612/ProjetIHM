@@ -119,8 +119,9 @@ public class Controller {
         stage.initModality(Modality.APPLICATION_MODAL);
         
         stage.show();
-
-
-
+	}
+	
+	public void FermerLexique(ActionEvent event) throws IOException{
+		((Node)(event.getSource())).getScene().getWindow().hide();
 	}
 }
