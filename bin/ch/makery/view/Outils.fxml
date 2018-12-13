@@ -32,5 +32,13 @@
             <Insets />
          </opaqueInsets>
       </Button>
+      <Button fx:id="LienVerbe" layoutX="251.0" layoutY="241.0" mnemonicParsing="false" onAction="#LienVerbe" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: white;" text="Verbes Irréguliers" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
    </children>
 </AnchorPane>
