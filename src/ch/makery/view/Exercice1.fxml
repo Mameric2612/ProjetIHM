@@ -41,26 +41,26 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <Text layoutX="59.0" layoutY="218.0" lineSpacing="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  2.  3.  4.  5.  6.  7.  8.  9.  10." wrappingWidth="23.48828125">
+      <Text layoutX="179.0" layoutY="217.0" lineSpacing="20.75" strokeType="OUTSIDE" strokeWidth="0.0" text="1.  2.  3.  4.  5.  6.  7.  8.  9.  10." wrappingWidth="23.48828125">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <Text layoutX="543.0" layoutY="218.0" lineSpacing="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11.  12.  13.  14.  15.  16.  17.  18.  19.  20." wrappingWidth="32.48828125">
+      <Text layoutX="543.0" layoutY="218.0" lineSpacing="20.75" strokeType="OUTSIDE" strokeWidth="0.0" text="11.  12.  13.  14.  15.  16.  17.  18.  19.  20." wrappingWidth="32.48828125">
          <font>
             <Font size="16.0" />
          </font>
       </Text>
-      <TextField layoutX="94.0" layoutY="200.0" />
-      <TextField layoutX="94.0" layoutY="241.0" />
-      <TextField layoutX="94.0" layoutY="285.0" />
-      <TextField layoutX="94.0" layoutY="328.0" />
-      <TextField layoutX="94.0" layoutY="370.0" />
-      <TextField layoutX="94.0" layoutY="412.0" />
-      <TextField layoutX="94.0" layoutY="454.0" />
-      <TextField layoutX="94.0" layoutY="494.0" />
-      <TextField layoutX="94.0" layoutY="535.0" />
-      <TextField layoutX="94.0" layoutY="578.0" />
+      <TextField layoutX="214.0" layoutY="199.0" />
+      <TextField layoutX="214.0" layoutY="240.0" />
+      <TextField layoutX="214.0" layoutY="284.0" />
+      <TextField layoutX="214.0" layoutY="327.0" />
+      <TextField layoutX="214.0" layoutY="369.0" />
+      <TextField layoutX="214.0" layoutY="411.0" />
+      <TextField layoutX="214.0" layoutY="453.0" />
+      <TextField layoutX="214.0" layoutY="493.0" />
+      <TextField layoutX="214.0" layoutY="534.0" />
+      <TextField layoutX="214.0" layoutY="577.0" />
       <TextField layoutX="591.0" layoutY="200.0" />
       <TextField layoutX="591.0" layoutY="241.0" />
       <TextField layoutX="591.0" layoutY="285.0" />
@@ -71,52 +71,52 @@
       <TextField layoutX="591.0" layoutY="494.0" />
       <TextField layoutX="591.0" layoutY="535.0" />
       <TextField layoutX="591.0" layoutY="578.0" />
-      <Label layoutX="265.0" layoutY="200.0" text="ashtray">
+      <Label layoutX="385.0" layoutY="199.0" text="ashtray">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="241.0" text="movie">
+      <Label layoutX="385.0" layoutY="240.0" text="movie">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="285.0" text="hoot">
+      <Label layoutX="385.0" layoutY="284.0" text="hoot">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="328.0" text="appointment">
+      <Label layoutX="385.0" layoutY="327.0" text="appointment">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="370.0" text="emblem">
+      <Label layoutX="385.0" layoutY="369.0" text="emblem">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="412.0" text="thing">
+      <Label layoutX="385.0" layoutY="411.0" text="thing">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="454.0" text="envelope">
+      <Label layoutX="385.0" layoutY="453.0" text="envelope">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="494.0" text="poor">
+      <Label layoutX="385.0" layoutY="493.0" text="poor">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="535.0" text="investment">
+      <Label layoutX="385.0" layoutY="534.0" text="investment">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <Label layoutX="265.0" layoutY="578.0" text="tree">
+      <Label layoutX="385.0" layoutY="577.0" text="tree">
          <font>
             <Font size="16.0" />
          </font>
@@ -176,5 +176,10 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Text>
+      <Button layoutX="14.0" layoutY="584.0" mnemonicParsing="false" onAction="#LienLecon1" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: rgb(199, 254, 185);" text="Retour à la leçon" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

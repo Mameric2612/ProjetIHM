@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
@@ -78,7 +77,17 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="435.0" layoutY="571.0" mnemonicParsing="false" onAction="#LienExercice1" style="-fx-background-color: rgb(199, 254, 185);" text="Passer à l'exercice" underline="true">
+      <Button layoutX="397.0" layoutY="556.0" mnemonicParsing="false" onAction="#LienExercice1" style="-fx-background-color: rgb(199, 254, 185);" text="Passer à l'exercice">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="14.0" layoutY="581.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Retour au choix de la leçon" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="554.0" layoutY="556.0" mnemonicParsing="false" onAction="#LienOutils" style="-fx-background-color: rgb(199, 254, 185);" text="Outils">
          <font>
             <Font size="14.0" />
          </font>

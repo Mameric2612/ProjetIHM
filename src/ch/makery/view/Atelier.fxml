@@ -60,19 +60,19 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Label>
-      <Button layoutX="65.0" layoutY="485.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+      <Button layoutX="86.0" layoutY="485.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours" underline="true">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="404.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+      <Button disable="true" layoutX="425.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours" underline="true">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="740.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+      <Button disable="true" layoutX="761.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours" underline="true">
          <font>
-            <Font size="18.0" />
+            <Font size="14.0" />
          </font>
       </Button>
       <Label layoutX="398.0" layoutY="135.0" text="Choix du niveau">

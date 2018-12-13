@@ -30,7 +30,7 @@
       <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
       <Accordion layoutY="97.0" prefHeight="529.0" prefWidth="1000.0">
         <panes>
-          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" text="Leçon 1">
+          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);" text="Leçon 1">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
                      <children>
@@ -44,7 +44,10 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Button layoutX="845.0" layoutY="80.0" mnemonicParsing="false" onAction="#LienLecon1" prefHeight="39.0" prefWidth="103.0" text="C'est parti !" />
+                        <Button layoutX="845.0" layoutY="84.0" mnemonicParsing="false" onAction="#LienLecon1" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
             </content>
@@ -66,7 +69,10 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Button layoutX="845.0" layoutY="80.0" mnemonicParsing="false" onAction="#LienLecon2" prefHeight="39.0" prefWidth="103.0" text="C'est parti !" />
+                        <Button disable="true" layoutX="845.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
                      </children>
                   </AnchorPane>
             </content>
@@ -78,7 +84,10 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: White;">
                      <children>
-                        <Button layoutX="845.0" layoutY="80.0" mnemonicParsing="false" onAction="#LienLecon3" prefHeight="39.0" prefWidth="103.0" text="C'est parti !" />
+                        <Button disable="true" layoutX="845.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
                         <Text layoutX="64.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dans cette leçon vous apprendrez le verbe &quot;être&quot; en anglais et sa conjugaison. Vous pourrez aussi tester vos connaissances dans un exercice à la suite de la leçon." wrappingWidth="691.0">
                            <font>
                               <Font size="16.0" />
@@ -98,5 +107,10 @@
           </TitledPane>
         </panes>
       </Accordion>
+      <Button layoutX="20.0" layoutY="580.0" mnemonicParsing="false" onAction="#LienAtelier" style="-fx-background-color: rgb(199, 254, 185);" text="Retour au choix du niveau" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

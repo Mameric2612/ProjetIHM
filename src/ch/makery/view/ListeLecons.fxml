@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+   <children>
+      <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
+         <children>
+            <Button layoutX="45.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="454.0" layoutY="22.0" text="Outils">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="794.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+      <Button layoutX="21.0" layoutY="212.0" mnemonicParsing="false" onAction="#LienLecon1" prefHeight="30.0" prefWidth="957.0" style="-fx-background-color: rgb(199, 254, 185);" />
+      <Button disable="true" layoutX="21.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="957.0" style="-fx-background-color: rgb(199, 254, 185);" />
+      <Button disable="true" layoutX="21.0" layoutY="278.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="957.0" style="-fx-background-color: rgb(199, 254, 185);" />
+      <Label layoutX="34.0" layoutY="214.0" text="A/An">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="123.0" text="Liste des leçons disponibles">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="280.0" text="Be">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="247.0" text="Alphabet">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="581.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Retour aux outils" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
