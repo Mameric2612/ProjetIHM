@@ -8,6 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
@@ -15,7 +17,7 @@ import javafx.stage.Stage;
 
 public class Controller {
 	@FXML
-	private WebView WebViewer;
+	private Pane WebViewer;
 
 	
 	public void LienMagazine(ActionEvent event) throws IOException{
@@ -59,7 +61,30 @@ public class Controller {
 		window.show();
 	}
 	
-
+	public void ArticleCulture1(ActionEvent event) throws IOException{
+		LienArticle("http://www.bbc.com/culture/story/20181210-art-made-by-ai-is-selling-for-thousands-is-it-any-good", event);
+	}
+	
+	public void ArticleCulture2(ActionEvent event) throws IOException{
+		LienArticle("http://www.bbc.com/culture/story/20181207-the-3bn-art-collection-hidden-in-vaults", event);
+	}
+		
+	public void ArticleCulture3(ActionEvent event) throws IOException{
+		LienArticle("https://www.wired.com/story/marvel-comics-genius-stan-lee-outcasts-heroes/", event);
+	}
+	
+	public void ArticleScience1(ActionEvent event) throws IOException{
+		LienArticle("https://www.americanscientist.org/blog/science-culture/neanderthals-in-prime-time", event);
+	}
+	
+	public void ArticleScience2(ActionEvent event) throws IOException{
+		LienArticle("https://www.americanscientist.org/blog/from-the-staff/the-giant-tadpole-that-never-got-its-legs", event);
+	}
+	
+	public void ArticleSport1(ActionEvent event) throws IOException{
+		LienArticle("https://edition.cnn.com/2018/12/12/sport/team-sky-sponsorship-sky-gbr-intl-spt/index.html", event);
+	}
+	
 	public void ArticleSport2(ActionEvent event) throws IOException{
 		LienArticle("https://edition.cnn.com/2018/12/12/sport/hines-ward-nfl-reflections-after-week-14-spt-intl/index.html", event);
 	}
@@ -67,23 +92,21 @@ public class Controller {
 	
 	public void LienArticle(String lien, ActionEvent event) throws IOException{
 		
-		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Article.fxml"));
-		
-		Scene tableViewScene =new  Scene(tableViewParent);
-			
-		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-		window.setScene(tableViewScene);
-		window.show();
-		
-		GererWebView(lien);
-	}
-	@FXML
-	public void GererWebView(String lien) {
 		WebView myWebView = new WebView();
-		WebViewer = myWebView;
-		WebEngine engine = WebViewer.getEngine();
-		engine.load("https://www.google.com");
+		WebEngine engine = myWebView.getEngine();
+		engine.load(lien);
+		VBox root = new VBox();
+		root.getChildren().addAll(myWebView);
+		
+		Scene tableViewScene =new  Scene(root);
+		Stage stage = new Stage();
+		stage.setScene(tableViewScene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        
+        stage.show();
 	}
+	
+	
 		
 		
 
