@@ -77,7 +77,6 @@ public class Controller {
 		
 		GererWebView(lien);
 	}
-	
 	@FXML
 	public void GererWebView(String lien) {
 		WebView myWebView = new WebView();
