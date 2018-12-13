@@ -73,6 +73,8 @@ public class Controller {
 		WebViewer = myWebView;
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Article.fxml"));
 		Pane root = new Pane();
+
+		engine.load("https://www.google.com");
 		root.getChildren().addAll(myWebView);
 		
 		Scene tableViewScene =new  Scene(tableViewParent);
