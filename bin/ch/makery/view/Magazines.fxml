@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+   <children>
+      <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
+         <children>
+            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+            <Label layoutX="415.0" layoutY="22.0" text="Magazines">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Accordion layoutY="97.0" prefHeight="400.0" prefWidth="1002.0">
+        <panes>
+          <TitledPane animated="false" text="Culture">
+            <content>
+              <AnchorPane maxWidth="1000.0" minHeight="100.0" minWidth="1000.0" prefHeight="167.0" prefWidth="1000.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="25.0" layoutY="17.0" prefHeight="32.0" prefWidth="41.0" text="BBC">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="20.0" text="- Is creativity only for humans?">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="60.0" text="- Modern art masterpieces you can’t see">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="57.0" prefHeight="32.0" prefWidth="41.0" text="BBC">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="79.0" layoutY="103.0" text="- Don't dump your old phone, turn it into glitzy gold jewellery instead">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="101.0" prefHeight="32.0" prefWidth="54.0" text="Wired">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="19.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                        <Button layoutX="14.0" layoutY="54.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="966.0" text="Button" />
+                        <Button layoutX="14.0" layoutY="98.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="966.0" text="Button" />
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font size="23.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" prefHeight="500.0" prefWidth="1000.0" text="Science">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="22.0" layoutY="14.0" prefHeight="32.0" prefWidth="164.0" text="American Scientist">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="17.0" text="- Neanderthals in Prime Time ">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="22.0" layoutY="54.0" prefHeight="32.0" prefWidth="164.0" text="American Scientist">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="57.0" text="- The Giant Tadpole That Never Got Its Legs">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                        <Button layoutX="14.0" layoutY="50.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font size="23.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="1002.0" text="Sport">
+            <content>
+              <AnchorPane prefHeight="249.0" prefWidth="964.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="41.0" text="CNN">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="62.0" layoutY="17.0" text="- Sky to end ownership of cycling outfit Team Sky">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="62.0" layoutY="56.0" text="- Hines Ward: Dallas Cowboys figuring it out at perfect time">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="53.0" prefHeight="32.0" prefWidth="41.0" text="CNN">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                        <Button layoutX="21.0" layoutY="50.0" mnemonicParsing="false" onAction="#LienArticle" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font size="23.0" />
+               </font>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
