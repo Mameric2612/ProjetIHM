@@ -20,9 +20,65 @@
                   <Insets />
                </opaqueInsets>
             </Button>
+            <Label layoutX="448.0" layoutY="22.0" text="Atelier">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
-      <WebView fx:id="WebViewer" layoutX="227.0" layoutY="223.0" prefHeight="200.0" prefWidth="200.0" />
+      <Separator layoutX="668.0" layoutY="251.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="329.0" layoutY="273.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Text layoutX="41.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous n'avez jamais pratiqué, ou que vous voulez revoir les bases, c'est par ici !" textAlignment="CENTER" wrappingWidth="243.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="379.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous avez déjà les bases mais souhaiteriez approfondir tout ça ? Ces cours sont faits pour vous !" textAlignment="CENTER" wrappingWidth="243.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="716.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous avez déjà un bon niveau et que vous souhaitez le perfectionner, cliquez ici !" textAlignment="CENTER" wrappingWidth="243.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Label layoutX="116.0" layoutY="241.0" text="Débutant">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="241.0" text="Intermediaire">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="802.0" layoutY="241.0" text="Avancé">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="65.0" layoutY="485.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="404.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="740.0" layoutY="485.0" mnemonicParsing="false" style="-fx-background-color: rgb(199, 254, 185);" text="Commencer les cours">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="398.0" layoutY="135.0" text="Choix du niveau">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

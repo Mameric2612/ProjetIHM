@@ -106,9 +106,6 @@ public class Controller {
         stage.show();
 	}
 	
-	
-		
-		
 
 	public void LienLexique(ActionEvent event) throws IOException{
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Lexique.fxml"));
