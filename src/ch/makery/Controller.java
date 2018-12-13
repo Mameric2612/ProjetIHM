@@ -10,6 +10,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Controller {
@@ -56,6 +57,7 @@ public class Controller {
 		window.show();
 	}
 	
+
 	public void ArticleSport2(ActionEvent event) throws IOException{
 		//LienArticle("https://edition.cnn.com/2018/12/12/sport/hines-ward-nfl-reflections-after-week-14-spt-intl/index.html", event);
 	}
@@ -82,6 +84,21 @@ public class Controller {
 	
 	public void GererWebView(String lien) {
 		
+	}
 		
+		
+
+	public void LienLexique(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Lexique.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+		
+		Stage stage = new Stage();
+		stage.setScene(tableViewScene);
+        stage.initModality(Modality.APPLICATION_MODAL);
+        
+        stage.show();
+
+
+
 	}
 }
