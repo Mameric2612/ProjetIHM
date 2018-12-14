@@ -51,6 +51,36 @@ public class Controller{
 		window.show();
 	}
 	
+	public void LienAtelierDebutant(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/AtelierDebutant.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+			
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	
+		window.setScene(tableViewScene);
+		window.show();
+	}
+	
+	public void LienLecon1(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Lecon1.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+			
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	
+		window.setScene(tableViewScene);
+		window.show();
+	}
+	
+	public void LienExercice1(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Exercice1.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+			
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	
+		window.setScene(tableViewScene);
+		window.show();
+	}
+	
 	@FXML
 	public void LienOutils(ActionEvent event) throws IOException{
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Outils.fxml"));
@@ -65,6 +95,16 @@ public class Controller{
 	@FXML
 	public void LienAccueil(ActionEvent event) throws IOException{
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/Accueil2.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+			
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	
+		window.setScene(tableViewScene);
+		window.show();
+	}
+	
+	public void LienListeLecons(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/ListeLecons.fxml"));
 		Scene tableViewScene =new  Scene(tableViewParent);
 			
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -148,12 +188,11 @@ public class Controller{
 
 		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/VerbesIrreguliers.fxml"));
 		Scene tableViewScene =new  Scene(tableViewParent);
-		
-		Stage stage = new Stage();
-		stage.setScene(tableViewScene);
-        stage.initModality(Modality.APPLICATION_MODAL);
-        
-        stage.show();
+			
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+	
+		window.setScene(tableViewScene);
+		window.show();
 	}
 	
 	

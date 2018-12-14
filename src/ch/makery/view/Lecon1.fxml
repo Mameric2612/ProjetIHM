@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+   <children>
+      <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
+         <children>
+            <Label layoutX="448.0" layoutY="22.0" text="Atelier">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="817.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+            <Button layoutX="38.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="473.0" layoutY="110.0" text="A/An">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="158.0" text="Cas général">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="24.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On emploie généralement a devant une consonne et an devant une voyelle. " wrappingWidth="639.265625">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le choix entre a et an dépend, en fait, de la prononciation, et non de l'orthographe. On a en fait un peu le même cas en français, lorsqu'on fait la liaison avec le petit &quot;n&quot; intercalaire, qu'on glisse pour faire la liaison : un éléphant. Si quelqu'un prononce &quot;un ||||| éléphant&quot;, cela nous semble bizarre." wrappingWidth="920.265625">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1er cas:                a house (une maison)                                  an (h)our (une heure)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="168.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(on prononce le h)                                (on ne prononce pas le h)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="111.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a school (une école)                                    an animal (un animal)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2e cas :                       a university">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ce mot commence par le son /j/. On parle bien du son, et non de la lettre. C'est le son qu'on trouve au début de &quot;USA&quot; ou de &quot;yellow&quot; en anglais, proche de celui de &quot;yaourt&quot; en français. Ce son est un son consonne en anglais, et on applique donc la règle des sons consonnes. On emploie a (a university)." wrappingWidth="931.87255859375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="24.0" layoutY="259.0" text="Exception">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="397.0" layoutY="556.0" mnemonicParsing="false" onAction="#LienExercice1" style="-fx-background-color: rgb(199, 254, 185);" text="Passer à l'exercice">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button disable="true" layoutX="14.0" layoutY="581.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Retour au choix de la leçon" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="554.0" layoutY="556.0" mnemonicParsing="false" onAction="#LienOutils" style="-fx-background-color: rgb(199, 254, 185);" text="Outils">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

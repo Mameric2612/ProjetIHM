@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+   <children>
+      <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
+         <children>
+            <Button layoutX="32.0" layoutY="27.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="448.0" layoutY="22.0" text="Atelier">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Accordion layoutY="97.0" prefHeight="529.0" prefWidth="1000.0">
+        <panes>
+          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);" text="Leçon 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="386.0" layoutY="22.0" text="A/AN" underline="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="63.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dans cette leçon vous apprendrez les pronoms indefinis et comment les utiliser. Vous pourrez aussi tester vos connaissances dans un exercice à la suite de la leçon." wrappingWidth="691.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="845.0" layoutY="84.0" mnemonicParsing="false" onAction="#LienLecon1" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" text="Leçon 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="336.0" layoutY="22.0" text="L'alphabet anglais" underline="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="63.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dans cette leçon vous apprendrez la prononciation de l'alphabet anglais. Vous pourrez aussi tester vos connaissances dans un exercice à la suite de la leçon." wrappingWidth="691.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Button disable="true" layoutX="845.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" text="Leçon 3">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: White;">
+                     <children>
+                        <Button disable="true" layoutX="845.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: rgb(199, 254, 185);" text="C'est parti !">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Text layoutX="64.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dans cette leçon vous apprendrez le verbe &quot;être&quot; en anglais et sa conjugaison. Vous pourrez aussi tester vos connaissances dans un exercice à la suite de la leçon." wrappingWidth="691.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="400.0" layoutY="23.0" text="BE" underline="true">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <font>
+                  <Font size="18.0" />
+               </font>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Button layoutX="20.0" layoutY="580.0" mnemonicParsing="false" onAction="#LienAtelier" style="-fx-background-color: rgb(199, 254, 185);" text="Retour au choix du niveau" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
