@@ -17,7 +17,7 @@
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
-            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Lexique" textAlignment="CENTER">
+            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
@@ -35,11 +35,16 @@
                   <Insets />
                </opaqueInsets>
             </Button>
+            <Label layoutX="425.0" layoutY="32.0" text="Lexique">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <AnchorPane layoutY="97.0" prefHeight="531.0" prefWidth="1000.0">
          <children>
-            <ScrollPane hbarPolicy="NEVER" layoutX="167.0" layoutY="99.0" prefHeight="334.0" prefWidth="639.0" vbarPolicy="ALWAYS">
+            <ScrollPane hbarPolicy="NEVER" layoutX="163.0" layoutY="120.0" prefHeight="334.0" prefWidth="639.0" vbarPolicy="ALWAYS">
                <content>
                   <GridPane cache="true" cacheHint="SCALE" gridLinesVisible="true" prefHeight="500.0" prefWidth="639.0">
                      <columnConstraints>
@@ -89,17 +94,17 @@
                   </GridPane>
                </content>
             </ScrollPane>
-            <Label layoutX="203.0" layoutY="53.0" text="Anglais">
+            <Label alignment="CENTER" layoutX="194.0" layoutY="51.0" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: rgb(199, 254, 185);" text="Anglais">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="378.0" layoutY="55.0" text="Français">
+            <Label alignment="CENTER" layoutX="357.0" layoutY="51.0" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: rgb(199, 254, 185);" text="Français">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="562.0" layoutY="55.0" text="Exemple d'utilisation">
+            <Label alignment="CENTER" layoutX="552.0" layoutY="51.0" prefHeight="36.0" prefWidth="205.0" style="-fx-background-color: rgb(199, 254, 185);" text="Exemple d'utilisation">
                <font>
                   <Font size="18.0" />
                </font>

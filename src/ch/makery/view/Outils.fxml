@@ -3,9 +3,12 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
 <AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
@@ -22,9 +25,14 @@
             </Button>
             <TextFlow layoutX="382.0" layoutY="21.0" prefHeight="55.0" prefWidth="236.0" />
             <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+            <Label contentDisplay="CENTER" layoutX="449.0" layoutY="32.0" prefHeight="53.0" prefWidth="122.0" text="Outils">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
-      <Button layoutX="75.0" layoutY="241.0" mnemonicParsing="false" onAction="#LienLexique" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Lexique" textAlignment="CENTER">
+      <Button layoutX="117.0" layoutY="389.0" mnemonicParsing="false" onAction="#LienLexique" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: rgb(199, 254, 185);" text="Accéder au lexique" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
@@ -32,7 +40,7 @@
             <Insets />
          </opaqueInsets>
       </Button>
-      <Button fx:id="LienVerbe" layoutX="251.0" layoutY="241.0" mnemonicParsing="false" onAction="#LienVerbe" prefHeight="36.0" prefWidth="208.0" style="-fx-background-color: white;" text="Verbes Irréguliers" textAlignment="CENTER">
+      <Button fx:id="LienVerbe" layoutX="589.0" layoutY="378.0" mnemonicParsing="false" onAction="#LienVerbe" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: rgb(199, 254, 185);" text="Accéder aux verbes irréguliers" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
@@ -40,5 +48,26 @@
             <Insets />
          </opaqueInsets>
       </Button>
+      <Text layoutX="184.0" layoutY="163.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ici, vous sont proposé différents outils afin de ne jamais rester dans l'incompréhension." textAlignment="CENTER" wrappingWidth="663.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Separator layoutX="456.0" layoutY="235.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="27.0" />
+      <Text layoutX="101.0" layoutY="256.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Un lexique vous donnera la signification de chaque mot" textAlignment="CENTER" wrappingWidth="224.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="628.0" layoutY="277.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des verbes irréguliers pour ne pas en oublier" textAlignment="CENTER" wrappingWidth="224.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="152.0" layoutY="524.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N'oubliez pas : Ces outils sont accessibles depuis n'importe dans le logiciel" textAlignment="CENTER" wrappingWidth="663.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

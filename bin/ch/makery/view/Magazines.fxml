@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
@@ -21,12 +23,17 @@
                </opaqueInsets>
             </Button>
             <ChoiceBox layoutX="767.0" layoutY="36.0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: white;" />
-            <Label layoutX="415.0" layoutY="22.0" text="Magazines">
+            <Label layoutX="515.0" layoutY="27.0" text="Magazines">
                <font>
                   <Font size="36.0" />
                </font>
             </Label>
             <Button layoutX="145.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienLexique" prefHeight="39.0" prefWidth="97.0" style="-fx-background-color: white;" text="Lexique">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="262.0" layoutY="30.0" mnemonicParsing="false" onAction="#LienVerbe" prefHeight="36.0" prefWidth="201.0" style="-fx-background-color: white;" text="Verbes Irréguliers">
                <font>
                   <Font size="18.0" />
                </font>

@@ -17,7 +17,7 @@
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
-            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Lexique" textAlignment="CENTER">
+            <Button layoutX="32.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
@@ -25,7 +25,14 @@
                   <Insets />
                </opaqueInsets>
             </Button>
-            <TextFlow layoutX="382.0" layoutY="21.0" prefHeight="55.0" prefWidth="236.0" />
+            <TextFlow layoutX="382.0" layoutY="21.0" prefHeight="55.0" prefWidth="236.0">
+               <children>
+                  <Label text="Verbes Irréguliers">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></TextFlow>
             <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
             <Button layoutX="185.0" layoutY="31.0" mnemonicParsing="false" onAction="#FermerLexique" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Fermer" textAlignment="CENTER">
                <font>
@@ -64,7 +71,7 @@
                      <children>
                         <Label alignment="CENTER" prefHeight="119.0" prefWidth="198.0" text="bear" GridPane.rowIndex="4" />
                         <Label alignment="CENTER" prefHeight="101.0" prefWidth="213.0" text="bore" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="172.0" text="abide" textAlignment="CENTER" />
+                        <Label alignment="CENTER" cache="true" contentDisplay="CENTER" prefHeight="47.0" prefWidth="172.0" text="abide" textAlignment="CENTER" />
                         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="178.0" text="abode" GridPane.columnIndex="1" />
                         <Label alignment="CENTER" prefHeight="47.0" prefWidth="159.0" text="respecter" GridPane.columnIndex="3" />
                         <Label alignment="CENTER" prefHeight="50.0" prefWidth="169.0" text="arise" GridPane.rowIndex="1" />
@@ -110,22 +117,22 @@
                   </GridPane>
                </content>
             </ScrollPane>
-            <Label layoutX="182.0" layoutY="55.0" text="Base Verbale">
+            <Label alignment="CENTER" layoutX="175.0" layoutY="40.0" prefHeight="36.0" prefWidth="137.0" text="Base Verbale" underline="true">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="378.0" layoutY="55.0" text="Prétérit">
+            <Label alignment="CENTER" layoutX="355.0" layoutY="40.0" prefHeight="36.0" prefWidth="90.0" text="Prétérit" underline="true">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="507.0" layoutY="55.0" text="Participe passé">
+            <Label alignment="CENTER" layoutX="487.0" layoutY="40.0" prefHeight="36.0" prefWidth="150.0" text="Participe passé" underline="true">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="677.0" layoutY="55.0" text="Traduction">
+            <Label alignment="CENTER" layoutX="666.0" layoutY="40.0" prefHeight="36.0" prefWidth="122.0" text="Traduction" underline="true">
                <font>
                   <Font size="18.0" />
                </font>
