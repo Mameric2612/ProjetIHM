@@ -27,10 +27,10 @@
             </Label>
          </children>
       </Pane>
-      <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
-      <Accordion layoutY="97.0" prefHeight="529.0" prefWidth="1000.0">
+      <ChoiceBox disable="true" layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <Accordion layoutY="97.0" prefHeight="400.0" prefWidth="1000.0">
         <panes>
-          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);" text="Leçon 1">
+          <TitledPane animated="false" prefHeight="308.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);" text="Leçon 1">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-color: white;">
                      <children>
@@ -52,10 +52,10 @@
                   </AnchorPane>
             </content>
                <font>
-                  <Font size="18.0" />
+                  <Font size="23.0" />
                </font>
           </TitledPane>
-          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" text="Leçon 2">
+          <TitledPane animated="false" maxWidth="1000.0" minHeight="-Infinity" minWidth="945.0" prefHeight="247.0" prefWidth="1000.0" text="Leçon 2">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
                      <children>
@@ -77,10 +77,10 @@
                   </AnchorPane>
             </content>
                <font>
-                  <Font size="18.0" />
+                  <Font size="23.0" />
                </font>
           </TitledPane>
-          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="1000.0" text="Leçon 3">
+          <TitledPane animated="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="1000.0" text="Leçon 3">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: White;">
                      <children>
@@ -102,7 +102,7 @@
                   </AnchorPane>
             </content>
                <font>
-                  <Font size="18.0" />
+                  <Font size="23.0" />
                </font>
           </TitledPane>
         </panes>

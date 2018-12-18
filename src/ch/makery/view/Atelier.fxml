@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -10,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
    <children>
       <Pane prefHeight="97.0" prefWidth="1000.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
@@ -29,7 +34,7 @@
             </Label>
          </children>
       </Pane>
-      <ChoiceBox layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+      <ChoiceBox disable="true" layoutX="810.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
       <Separator layoutX="666.0" layoutY="272.0" orientation="VERTICAL" prefHeight="200.0" />
       <Separator layoutX="336.0" layoutY="272.0" orientation="VERTICAL" prefHeight="200.0" />
       <Text layoutX="51.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Si vous n'avez jamais pratiqué, ou que vous voulez revoir les bases, c'est par ici !" textAlignment="CENTER" wrappingWidth="243.13671875">

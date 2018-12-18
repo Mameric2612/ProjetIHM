@@ -29,7 +29,7 @@ public class MainApp extends Application {
         try {
             // Load root layout from fxml file.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/Accueil2.fxml"));
+            loader.setLocation(MainApp.class.getResource("view/Accueil1.fxml"));
             Accueil = (AnchorPane) loader.load();
             
             // Show the scene containing the root layout.

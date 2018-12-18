@@ -160,7 +160,7 @@ public class Controller{
 		Scene tableViewScene =new  Scene(root);
 		Stage stage = new Stage();
 		stage.setScene(tableViewScene);
-        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initModality(Modality.NONE);
         
         stage.show();
 	}
@@ -173,7 +173,7 @@ public class Controller{
 		
 		Stage stage = new Stage();
 		stage.setScene(tableViewScene);
-        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.initModality(Modality.NONE);
         
         stage.show();
 	}
@@ -193,6 +193,18 @@ public class Controller{
 	
 		window.setScene(tableViewScene);
 		window.show();
+	}
+	
+	@FXML
+	public void LienCorrectionExo1(ActionEvent event) throws IOException{
+		Parent tableViewParent=FXMLLoader.load(getClass().getResource("view/CorrectionExo1.fxml"));
+		Scene tableViewScene =new  Scene(tableViewParent);
+		
+		Stage stage = new Stage();
+		stage.setScene(tableViewScene);
+        stage.initModality(Modality.NONE);
+        
+        stage.show();
 	}
 	
 	

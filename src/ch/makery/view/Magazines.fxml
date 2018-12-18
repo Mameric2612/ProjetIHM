@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
@@ -10,7 +15,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
+<AnchorPane prefHeight="625.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.Controller">
    <children>
       <Pane prefHeight="97.0" prefWidth="1002.0" style="-fx-background-color: rgb(199, 254, 185);">
          <children>
@@ -22,8 +27,7 @@
                   <Insets />
                </opaqueInsets>
             </Button>
-            <ChoiceBox layoutX="767.0" layoutY="36.0" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: white;" />
-            <Label layoutX="405.0" layoutY="27.0" text="Magazines">
+            <Label layoutX="416.0" layoutY="22.0" text="Magazines">
                <font>
                   <Font size="36.0" />
                </font>
@@ -33,6 +37,7 @@
                   <Font size="18.0" />
                </font>
             </Button>
+            <ChoiceBox disable="true" layoutX="817.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
          </children>
       </Pane>
       <Accordion layoutY="97.0" prefHeight="400.0" prefWidth="1000.0">
@@ -61,19 +66,19 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="85.0" layoutY="107.0" text="- Stan Lee Unleashed the Heroic Power of the Outcast">
+                        <Label layoutX="85.0" layoutY="103.0" text="- Stan Lee Unleashed the Heroic Power of the Outcast">
                            <font>
                               <Font name="System Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="25.0" layoutY="101.0" prefHeight="32.0" prefWidth="60.0" text="Wired">
+                        <Label layoutX="25.0" layoutY="100.0" prefHeight="32.0" prefWidth="60.0" text="Wired">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
                         <Button layoutX="19.0" layoutY="14.0" mnemonicParsing="false" onAction="#ArticleCulture1" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
                         <Button layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#ArticleCulture2" opacity="0.0" prefHeight="39.0" prefWidth="966.0" text="Button" />
-                        <Button layoutX="17.0" layoutY="98.0" mnemonicParsing="false" onAction="#ArticleCulture3" opacity="0.0" prefHeight="39.0" prefWidth="966.0" text="Button" />
+                        <Button layoutX="18.0" layoutY="97.0" mnemonicParsing="false" onAction="#ArticleCulture3" opacity="0.0" prefHeight="39.0" prefWidth="966.0" text="Button" />
                      </children></AnchorPane>
             </content>
                <font>
@@ -89,7 +94,7 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="222.0" layoutY="20.0" text="- Neanderthals in Prime Time ">
+                        <Label layoutX="222.0" layoutY="17.0" text="- Neanderthals in Prime Time ">
                            <font>
                               <Font name="System Italic" size="18.0" />
                            </font>
@@ -99,13 +104,13 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="222.0" layoutY="60.0" text="- The Giant Tadpole That Never Got Its Legs">
+                        <Label layoutX="222.0" layoutY="57.0" text="- The Giant Tadpole That Never Got Its Legs">
                            <font>
                               <Font name="System Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#ArticleScience1" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
-                        <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#ArticleScience2" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                        <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#ArticleScience1" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
+                        <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#ArticleScience2" opacity="0.0" prefHeight="39.0" prefWidth="954.0" text="Button" />
                      </children>
                   </AnchorPane>
             </content>

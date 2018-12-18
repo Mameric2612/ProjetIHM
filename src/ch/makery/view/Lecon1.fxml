@@ -16,7 +16,7 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <ChoiceBox layoutX="817.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
+            <ChoiceBox disable="true" layoutX="817.0" layoutY="36.0" prefWidth="150.0" style="-fx-background-color: white;" />
             <Button layoutX="38.0" layoutY="29.0" mnemonicParsing="false" onAction="#LienAccueil" prefHeight="36.0" prefWidth="97.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
@@ -78,11 +78,6 @@
          </font>
       </Label>
       <Button layoutX="397.0" layoutY="556.0" mnemonicParsing="false" onAction="#LienExercice1" style="-fx-background-color: rgb(199, 254, 185);" text="Passer à l'exercice">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Button>
-      <Button disable="true" layoutX="14.0" layoutY="581.0" mnemonicParsing="false" onAction="#LienAtelierDebutant" style="-fx-background-color: rgb(199, 254, 185);" text="Retour au choix de la leçon" underline="true">
          <font>
             <Font size="14.0" />
          </font>
